@@ -19,3 +19,18 @@ function redDiv(){
     //var redDiv = document.getElementById("redBg","redT").innerHTML;
     //redDiv.onclick = function(){
        // redDiv.style.backgroundColor = "red";
+
+
+
+       /* change the color of a div by clicking on text inside div */
+var colorDiv = document.createElement('div');
+colorDiv.style.width = '100px';
+colorDiv.style.height = '100px';
+colorDiv.style.backgroundColor = 'red';
+document.body.appendChild(colorDiv);
+var colorDivText = document.createElement('div');
+colorDivText.innerHTML = 'Click me to change the color of the box';
+colorDiv.appendChild(colorDivText);
+colorDiv.addEventListener('click', function() {
+  colorDiv.style.backgroundColor = 'blue';
+});

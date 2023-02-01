@@ -49,7 +49,7 @@ function blueDiv(){
     let e = document.getElementById("blueBg");
     let c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
-        document.getElementById("blueBg").style.background = "#0000ff";
+        document.getElementById("blueBg").style.background = "0000ff";
     } 
     else{
         document.getElementById("blueBg").style.background = "#ffffff";
@@ -59,19 +59,19 @@ function blueDiv(){
 
 function darkPurpleDiv(){
     let e = document.getElementById("darkPurpleBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
-        document.getElementById("darkPurpleBg").style.background = "#800080";
+        document.getElementById("purpleBg").style.background = "#800080";
     } 
     else{
-        document.getElementById("darkPurpleBg").style.background = "#ffffff";
+        document.getElementById("purpleBg").style.background = "#ffffff";
     }
             
     }
 
 function lightPurpleDiv(){
-    let e = document.getElementById("lightPurpleBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var e = document.getElementById("lightPurpleBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
         document.getElementById("lightPurpleBg").style.background = "#8a2be2";
     } 

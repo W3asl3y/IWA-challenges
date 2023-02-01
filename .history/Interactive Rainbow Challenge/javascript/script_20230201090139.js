@@ -49,7 +49,7 @@ function blueDiv(){
     let e = document.getElementById("blueBg");
     let c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
-        document.getElementById("blueBg").style.background = "#0000ff";
+        document.getElementById("blueBg").style.background = "0000ff";
     } 
     else{
         document.getElementById("blueBg").style.background = "#ffffff";

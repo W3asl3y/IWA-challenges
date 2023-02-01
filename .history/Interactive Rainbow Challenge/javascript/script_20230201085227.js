@@ -1,6 +1,6 @@
 function redDiv(){
-    let e = document.getElementById("redBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var e = document.getElementById("redBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
         document.getElementById("redBg").style.background = "#ff0000";
     } 
@@ -11,8 +11,8 @@ function redDiv(){
     }
 
 function orangeDiv(){
-    let e = document.getElementById("orangeBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var e = document.getElementById("orangeBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
         document.getElementById("orangeBg").style.background = "#ff4500";
     } 
@@ -23,8 +23,8 @@ function orangeDiv(){
     }
 
 function yellowDiv(){
-    let e = document.getElementById("yellowBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var e = document.getElementById("yellowBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
         document.getElementById("yellowBg").style.background = "#ffff00";
     } 
@@ -34,8 +34,8 @@ function yellowDiv(){
     }
 
 function greenDiv(){
-    let e = document.getElementById("greenBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var e = document.getElementById("greenBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
         document.getElementById("greenBg").style.background = "#008000";
     } 
@@ -46,10 +46,10 @@ function greenDiv(){
     }
 
 function blueDiv(){
-    let e = document.getElementById("blueBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var e = document.getElementById("blueBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
-        document.getElementById("blueBg").style.background = "#0000ff";
+        document.getElementById("blueBg").style.background = "0000ff";
     } 
     else{
         document.getElementById("blueBg").style.background = "#ffffff";
@@ -57,21 +57,21 @@ function blueDiv(){
 
     }
 
-function darkPurpleDiv(){
-    let e = document.getElementById("darkPurpleBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+function purpleDiv(){
+    var e = document.getElementById("purpleBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
-        document.getElementById("darkPurpleBg").style.background = "#800080";
+        document.getElementById("purpleBg").style.background = "#800080";
     } 
     else{
-        document.getElementById("darkPurpleBg").style.background = "#ffffff";
+        document.getElementById("purpleBg").style.background = "#ffffff";
     }
             
     }
 
 function lightPurpleDiv(){
-    let e = document.getElementById("lightPurpleBg");
-    let c = window.getComputedStyle(e).backgroundColor;
+    var e = document.getElementById("lightPurpleBg");
+    var c = window.getComputedStyle(e).backgroundColor;
     if (c === "rgb(255, 255, 255)") {
         document.getElementById("lightPurpleBg").style.background = "#8a2be2";
     } 
@@ -82,14 +82,14 @@ function lightPurpleDiv(){
     }
 
        /* change the color of a div by clicking on text inside div */
-    //var colorDiv = document.createElement('div');
-    //colorDiv.style.width = '100px';
-    //colorDiv.style.height = '100px';
-    //colorDiv.style.backgroundColor = 'red';
-    //document.body.appendChild(colorDiv);
-    //var colorDivText = document.createElement('div');
-    //colorDivText.innerHTML = 'Click me to change the color of the box';
-    //colorDiv.appendChild(colorDivText);
-    //colorDiv.addEventListener('click', function() {
-    //colorDiv.style.backgroundColor = 'blue';
-//});
+var colorDiv = document.createElement('div');
+colorDiv.style.width = '100px';
+colorDiv.style.height = '100px';
+colorDiv.style.backgroundColor = 'red';
+document.body.appendChild(colorDiv);
+var colorDivText = document.createElement('div');
+colorDivText.innerHTML = 'Click me to change the color of the box';
+colorDiv.appendChild(colorDivText);
+colorDiv.addEventListener('click', function() {
+  colorDiv.style.backgroundColor = 'blue';
+});
